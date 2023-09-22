@@ -1,0 +1,77 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  width: min(600px, 90%);
+  margin: 0 auto;
+  gap: 12px;
+  padding: 24px;
+}
+
+.questionnaire {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 1px 1px;
+  gap: 12px;
+}
+
+.question {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: sans-serif;
+}
+
+.optionsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 12px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.button {
+  outline: none;
+  background: transparent;
+  border: 1px solid black;
+  box-shadow: 1px 1px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: scale 0.6s;
+}
+
+.button:hover {
+  scale: 1.02;
+}
+
+.button:active {
+  scale: 0.98;
+}
+
+.button:disabled {
+  border: 1px solid #ececec;
+  opacity: 0.8;
+}
+
+.button:disabled:hover {
+  scale: 1;
+}
